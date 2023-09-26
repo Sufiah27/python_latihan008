@@ -1,6 +1,6 @@
 class Food:
     def __init__(self, stall_name, foodlist):
-        #__init__ - allow user to freely use the parameter by giving them a value that can be used in other line
+        # __init__ - allow user to freely use the parameter by giving them a value that can be used in other line
         self.stall_name = stall_name
         self.foodlist = foodlist
         self.order = []
@@ -27,8 +27,9 @@ class Food:
         else:
             print("You haven't placed any orders yet.")
 
+
 if __name__ == '__main__':
-    food_stall = Food("Fingerlicking-Good", ["Nasi Lemak", "Nasi Kerabu", "Nasi Lauk Ayam"])
+    food_stall = Food("Sarapan-Tengahari", ["Roti Bakar", "Nasi Lemak", "Nasi Kerabu", "Nasi Lauk Ayam"])
 
     food_stall.displayFood()
     food_stall.takeOrder()
